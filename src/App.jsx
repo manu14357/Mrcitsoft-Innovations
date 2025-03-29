@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom'; // No BrowserRouter here
 import { 
   Billing, 
   Business, 
@@ -25,8 +25,8 @@ import {
   Blogs,
   BlogPost,
   Support
-} from './components'
-import styles from './style'
+} from './components';
+import styles from './style';
 
 const App = () => {
   return (
@@ -39,9 +39,7 @@ const App = () => {
       </div>
 
       {/* Content with Routing */}
-      
-      <Routes basename="/Mrcitsoft-Innovations">
-        {/* Homepage */}
+      <Routes>
         <Route
           path='/'
           element={
@@ -53,44 +51,29 @@ const App = () => {
                 <Billing />
                 <CardDeal />
                 <Testimonials />
-              
                 <CTA />
                 <Footer />
               </div>
             </div>
           }
         />
-        {/* Web Services Page */}
         <Route path='/web-services' element={<WebServices />} />
-
         <Route path='/ui-services' element={<UIServices />} />
-
-        <Route path='/Mobile-services' element={<MobileServices />} />
-
+        <Route path='/mobile-services' element={<MobileServices />} />
         <Route path='/cyber-security-services' element={<CyberSecurityServices />} />
-
         <Route path='/business-development-services' element={<BusinessDevelopmentServices />} />
-
         <Route path='/quality-assurance-services' element={<QualityAssuranceServices />} />
-
-        <Route path='/privacy-Policy' element={<PrivacyPolicy />} />
-
-        <Route path='/Terms-of-service' element={<TermsOfService />} />
-
-        <Route path='/Contact-Us' element={<ContactForm />} />
-
-        <Route path='/About-Us' element={<About />} />
-
-        <Route path='/Career' element={<Career />} />
-
-        <Route path='/Blogs' element={<Blogs />} />
-
-        <Route path='/Blogs/:id' element={<BlogPost />} />
-
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/terms-of-service' element={<TermsOfService />} />
+        <Route path='/contact-us' element={<ContactForm />} />
+        <Route path='/about-us' element={<About />} />
+        <Route path='/career' element={<Career />} />
+        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/blogs/:id' element={<BlogPost />} />
         <Route path='/support' element={<Support />} />
       </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
