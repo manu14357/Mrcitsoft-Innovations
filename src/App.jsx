@@ -40,7 +40,7 @@ const App = () => {
 
       {/* Content with Routing */}
       
-      <Routes>
+      <Routes basename="/Mrcitsoft-Innovations">
         {/* Homepage */}
         <Route
           path='/'
