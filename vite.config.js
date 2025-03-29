@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base:"/Mrcitsoft-Innovations/",
+  base:"/",
   optimizeDeps: {
     include: ['react-syntax-highlighter'],
   },
