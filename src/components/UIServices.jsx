@@ -4,9 +4,17 @@ import { ChevronRight, Paintbrush, Smartphone, Users, Repeat } from 'lucide-reac
 import { Helmet } from 'react-helmet'; // Import react-helmet for metadata
 import Footer from './Footer';
 import uiux from '../assets/uiux.svg';
+import { useNavigate } from 'react-router-dom';
+
 
 const UIServices = () => {
   const [activeCard, setActiveCard] = useState(null);
+    const navigate = useNavigate();
+  
+    const handleClick = () => {
+      navigate('/Contact-Us');
+    };
+  
 
   const uiServices = [
     {
@@ -148,11 +156,12 @@ const UIServices = () => {
                 inspire and connect with your audience, blending aesthetics with functionality.
               </p>
               <motion.a
-                href="#contact"
+                href="#Contact-Us"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center"
                 aria-label="Get started with UI/UX design services"
+                onClick={handleClick}
               >
                 Get Started <ChevronRight className="ml-2 w-5 h-5" />
               </motion.a>

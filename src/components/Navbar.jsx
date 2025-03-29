@@ -96,6 +96,10 @@ const Navbar = () => {
     setActiveDropdown(null);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   // Service description helper
   const getServiceDescription = (serviceId) => {
     const descriptions = {
@@ -119,7 +123,7 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4 sm:px-8 lg:px-16 flex items-center justify-between max-w-[1440px]">
           {/* Logo on Left */}
-          <Link to="/" aria-label="Home">
+          <Link to="/" aria-label="Home" onClick={scrollToTop}>
             <motion.img
             src={logo}
             alt="Company Logo"
@@ -163,6 +167,7 @@ const Navbar = () => {
                               <Link
                                 to={`/${subLink.id}`}
                                 className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-[12px] lg:text-[14px]"
+                                onClick={scrollToTop}
                               >
                                 <span className="font-semibold">{subLink.title}</span>
                                 <p className="text-[10px] lg:text-[12px] text-gray-500 dark:text-gray-400 mt-1">
@@ -179,6 +184,7 @@ const Navbar = () => {
                   <Link
                     to={`/${nav.id}`}
                     className="relative hover:text-blue-600 transition-colors duration-300"
+                    onClick={scrollToTop}
                   >
                     {nav.title}
                     <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -278,6 +284,7 @@ const Navbar = () => {
                                       to={`/${subLink.id}`}
                                       className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-[16px] sm:text-[18px] font-medium transition-colors duration-200"
                                       onClick={handleLinkClick}
+                                      
                                     >
                                       {subLink.title}
                                     </Link>

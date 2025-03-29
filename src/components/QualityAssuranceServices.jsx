@@ -4,9 +4,17 @@ import { ChevronRight, Search, Smartphone, Shield, Repeat } from 'lucide-react';
 import { Helmet } from 'react-helmet'; // Import react-helmet for metadata
 import Footer from './Footer';
 import qa from '../assets/qa.svg'; // Assuming QA image exists
+import { useNavigate } from 'react-router-dom';
+
 
 const QualityAssuranceServices = () => {
   const [activeCard, setActiveCard] = useState(null);
+    const navigate = useNavigate();
+  
+    const handleClick = () => {
+      navigate('/Contact-Us');
+    };
+  
 
   const qaServices = [
     {
@@ -148,11 +156,12 @@ const QualityAssuranceServices = () => {
                 seamless user experience and meet the highest standards.
               </p>
               <motion.a
-                href="#contact"
+                href="#Contact-Us"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center"
                 aria-label="Get started with quality assurance services"
+                onClick={handleClick}
               >
                 Get Started <ChevronRight className="ml-2 w-5 h-5" />
               </motion.a>

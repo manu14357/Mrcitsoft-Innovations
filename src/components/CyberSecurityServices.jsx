@@ -4,9 +4,17 @@ import { ChevronRight, Shield, AlertTriangle, Lock, Key, Globe, Mail } from 'luc
 import { Helmet } from 'react-helmet'; // Import react-helmet for metadata
 import Footer from './Footer';
 import Security from '../assets/Security.svg';
+import { useNavigate } from 'react-router-dom';
+
 
 const CyberSecurityServices = () => {
   const [activeCard, setActiveCard] = useState(null);
+    const navigate = useNavigate();
+  
+    const handleClick = () => {
+      navigate('/Contact-Us');
+    };
+  
 
   const cyberServices = [
     {
@@ -158,11 +166,12 @@ const CyberSecurityServices = () => {
                 and safeguard your data—delivering peace of mind at a cost-effective price.
               </p>
               <motion.a
-                href="#contact"
+                href="#Contact-Us"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center"
                 aria-label="Get started with cyber security services"
+                onClick={handleClick}
               >
                 Get Started <ChevronRight className="ml-2 w-5 h-5" />
               </motion.a>

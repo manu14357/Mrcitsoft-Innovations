@@ -4,9 +4,15 @@ import { motion } from 'framer-motion';
 import { ChevronRight, Globe, Code, ShoppingCart, BarChart, Shield } from 'lucide-react';
 import Footer from './Footer';
 import WebDevelopment from '../assets/WebDevelopment.svg';
+import { useNavigate } from 'react-router-dom';
 
 const WebServices = () => {
   const [activeCard, setActiveCard] = useState(null);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/Contact-Us');
+  };
 
   const designServices = [
     {
@@ -180,6 +186,7 @@ const WebServices = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors"
                 aria-label="Get Started with Web Development"
+                onClick={handleClick}
               >
                 Get Started
               </motion.button>

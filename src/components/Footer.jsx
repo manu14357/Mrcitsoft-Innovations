@@ -94,6 +94,10 @@ const Footer = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <motion.section
       initial="hidden"
@@ -135,7 +139,7 @@ const Footer = () => {
                       index !== link.links.length - 1 ? 'mb-4' : 'mb-0'
                     }`}
                   >
-                    <Link to={item.link}>{item.name}</Link>
+                    <Link to={item.link} onClick={scrollToTop}>{item.name}</Link>
                   </motion.li>
                 ))}
               </ul>

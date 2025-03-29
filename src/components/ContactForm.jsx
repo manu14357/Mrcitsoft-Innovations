@@ -340,7 +340,7 @@ const ContactForm = () => {
               </motion.article>
             </div>
             <motion.a
-              href="#contact"
+              href="#Contact-Us"
               whileHover={{ scale: 1.05, boxShadow: '0 0 15px rgba(147, 51, 234, 0.5)' }}
               whileTap={{ scale: 0.95 }}
               className="mt-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 inline-flex items-center"
