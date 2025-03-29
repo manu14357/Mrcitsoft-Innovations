@@ -94,7 +94,7 @@ const About = () => {
           initial="hidden"
           animate="visible"
           variants={animationConfigs.fadeIn}
-          className="py-20 px-4 sm:px-8 bg-gradient-to-br from-gray-800/30 to-gray-900/80"
+          className="py-20 px-4 sm:px-8 "
         >
           <div className="container mx-auto max-w-5xl text-center">
             <motion.h1

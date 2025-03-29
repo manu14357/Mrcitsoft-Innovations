@@ -4,33 +4,84 @@ import styles from '../style';
 import logo from '../assets/logo.png';
 import { socialMedia } from '../constants'; // Assuming socialMedia is defined in constants
 
-// Footer links configuration
+// Navigation links configuration
+const navLinks = [
+  {
+    id: "",
+    title: "Home",
+  },
+  {
+    id: "services",
+    title: "Services",
+    subLinks: [
+      {
+        id: "web-services",
+        title: "Web Development",
+      },
+      {
+        id: "ui-services",
+        title: "UI/UX Design",
+      },
+      {
+        id: "mobile-services",
+        title: "Mobile App Development",
+      },
+      {
+        id: "cyber-security-services",
+        title: "Cyber Security",
+      },
+      {
+        id: "business-development-services",
+        title: "Business Development",
+      },
+      {
+        id: "quality-assurance-services",
+        title: "Quality Assurance",
+      },
+    ],
+  },
+  {
+    id: "About-Us",
+    title: "About",
+  },
+  {
+    id: "Blogs",
+    title: "Blogs",
+  },
+  {
+    id: "Career",
+    title: "Career",
+  },
+  {
+    id: "Contact-Us",
+    title: "Contact",
+  },
+];
+
+// Organize navLinks into three footer categories
 const footerLinks = [
   {
-    title: 'Services',
+    title: "Services",
+    links: navLinks.find(link => link.id === "services").subLinks.map(subLink => ({
+      name: subLink.title,
+      link: `/${subLink.id}`,
+    })),
+  },
+  {
+    title: "Company",
     links: [
-      { name: 'Web Development', link: '/web-services' },
-      { name: 'UI/UX Design', link: '/ui-services' },
-      { name: 'Mobile Apps', link: '/mobile-services' },
-      { name: 'Cyber Security', link: '/cyber-security-services' },
-      { name: 'Business Development', link: '/business-development-services' },
-      { name: 'Quality Assurance', link: '/quality-assurance-services' },
+      { name: "Home", link: "/" },
+      { name: "About", link: "/About-Us" },
+      { name: "Career", link: "/Career" },
+      { name: "Contact", link: "/Contact-Us" },
     ],
   },
   {
-    title: 'Company',
+    title: "Resources",
     links: [
-      { name: 'About Us', link: '/About-Us' },
-      { name: 'Contact Us', link: '/Contact-Us' },
-      { name: 'Careers', link: '/Career' },
-    ],
-  },
-  {
-    title: 'Resources',
-    links: [
-      { name: 'Blog', link: '/Blogs' },
-      { name: 'Support', link: '/support' },
-      { name: 'Privacy Policy', link: '/privacy-Policy' },
+      { name: "Blogs", link: "/Blogs" },
+      { name: "Support", link: "/support" },
+      { name: "Privacy Policy", link: "/privacy-Policy" },
     ],
   },
 ];
