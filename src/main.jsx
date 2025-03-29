@@ -9,5 +9,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter> {/* Wrap App with BrowserRouter */}
       <App />
     </BrowserRouter>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
