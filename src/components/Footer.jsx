@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import styles from '../style';
 import logo from '../assets/logo.png';
 import { socialMedia } from '../constants'; // Assuming socialMedia is defined in constants
@@ -134,7 +135,7 @@ const Footer = () => {
                       index !== link.links.length - 1 ? 'mb-4' : 'mb-0'
                     }`}
                   >
-                    <a href={item.link}>{item.name}</a>
+                    <Link to={item.link}>{item.name}</Link>
                   </motion.li>
                 ))}
               </ul>
@@ -153,19 +154,19 @@ const Footer = () => {
             © {new Date().getFullYear()} Mrcitsoft Innovations. All Rights Reserved.
           </p>
           <div className="flex space-x-4 md:ml-6 mt-2 md:mt-0">
-            <a
-              href="/privacy-Policy"
+            <Link
+              to="/privacy-Policy"
               className="font-poppins font-normal text-[16px] leading-[24px] text-gray-200 hover:text-blue-400 transition-colors duration-300"
             >
               Privacy Policy
-            </a>
+            </Link>
             <span className="text-gray-200 hidden md:inline">|</span>
-            <a
-              href="/Terms-of-service"
+            <Link
+              to="/Terms-of-service"
               className="font-poppins font-normal text-[16px] leading-[24px] text-gray-200 hover:text-blue-400 transition-colors duration-300"
             >
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-row md:mt-0 mt-6 space-x-6">
