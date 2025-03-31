@@ -1,10 +1,10 @@
-# Mrcitsoft Innovations Website
+# Mrcitsoft Innovations
 
-![Mrcitsoft Innovations Logo](https://mrcitsoft/src/assets/Logo.png) 
-Welcome to the official repository for the **Mrcitsoft Innovations Website**, a dynamic platform showcasing our expertise in technology solutions. Developed by **Manohar** and the team at Mrcitsoft Innovations, this project empowers businesses and individuals with innovative services, internship opportunities, and a seamless digital experience.
+<img src="https://www.mrcitsoft.com/assets/Logo-cb713642.png" alt="Mrcitsoft Innovations Logo" width="200">
+Welcome to the official repository for the **Mrcitsoft Innovations**, a dynamic platform showcasing our expertise in technology solutions. Developed by **Manohar Choppa** and the team at Mrcitsoft Innovations, this project empowers businesses and individuals with innovative services, internship opportunities, and a seamless digital experience.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Issues](https://img.shields.io/github/issues/yourusername/mrcitsoft-innovations)](https://github.com/yourusername/mrcitsoft-innovations/issues)
+[![GitHub Issues](https://img.shields.io/github/issues/manu14357/mrcitsoft-innovations)](https://github.com/manu14357/mrcitsoft-innovations/issues)
 
 ## Table of Contents
 - [About](#about)
@@ -83,7 +83,7 @@ The output will be in the `dist/` folder, ready for deployment.
 
 ## Usage
 - **Explore Services**: Use the navigation bar to visit pages like `/ui-services`, `/careers`, or `/privacy`.
-- **Apply for Internships**: Check `/careers` for open positions and send applications to `careers@mrcitsoft.com`.
+- **Apply for Internships**: Check `/careers` for open positions and send applications to `info@mrcitsoft.com`.
 - **Contact Us**: Reach out via `info@mrcitsoft.com` or the contact page (if implemented).
 - **Developer Mode**: Run locally to test features, tweak designs, or contribute enhancements.
 
@@ -162,10 +162,10 @@ SOFTWARE.
 We'd love to hear from you! Reach out for questions, feedback, or collaboration:
 
 - **Email**: [info@mrcitsoft.com](mailto:info@mrcitsoft.com)
-- **Careers**: [careers@mrcitsoft.com](mailto:careers@mrcitsoft.com)
+- **Careers**: [info@mrcitsoft.com](mailto:info@mrcitsoft.com)
 - **Website**: [https://mrcitsoft.com](https://mrcitsoft.com) <!-- Replace with your actual URL -->
-- **Lead Developer**: Manohar
-- **GitHub**: [yourusername](https://github.com/yourusername) <!-- Replace with your GitHub profile -->
+- **Lead Developer**: Manohar Choppa
+- **GitHub**: [manu1435](https://github.com/manu14357) <!-- Replace with your GitHub profile -->
 
 ## Acknowledgements
 - **Team**: Thanks to the Mrcitsoft Innovations team for their support and contributions.
