@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 
 // Import assets (replace with your actual asset paths)
-import logo from '../assets/logo.png';
+import logo from '../assets/Logo.png';
 import menuIcon from '../assets/menu.svg';
 import closeIcon from '../assets/close.svg';
 
