@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import styles from '../style';
-import logo from '../assets/logo.png';
+import logo from '../assets/Logo.png';
 import { socialMedia } from '../constants'; // Assuming socialMedia is defined in constants
 
 // Navigation links configuration
