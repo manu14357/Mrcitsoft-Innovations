@@ -109,7 +109,7 @@ const About = () => {
               Welcome to Mrcitsoft Innovations – a vibrant tech startup and your trusted partner in the digital world. We’re a team of innovators, creators, and strategists dedicated to driving excellence, delivering cutting-edge solutions, and empowering businesses to thrive in the digital age with our startup energy.
             </p>
             <motion.a
-              href="/contact"
+              href="#/Contact-Us"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
@@ -309,7 +309,7 @@ const About = () => {
               At Mrcitsoft Innovations, we’re more than a startup – we’re your allies in the digital frontier. Let’s collaborate to unlock your potential with innovative technology solutions. Reach out today!
             </p>
             <motion.a
-              href="/Contact-Us"
+              href="#/Contact-Us"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
