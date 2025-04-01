@@ -65,10 +65,10 @@ const App = () => {
         <Route path='/quality-assurance-services' element={<QualityAssuranceServices />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path='/terms-of-service' element={<TermsOfService />} />
-        <Route path='/contact-us' element={<ContactForm />} />
-        <Route path='/about-us' element={<About />} />
-        <Route path='/career' element={<Career />} />
-        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/Contact-Us' element={<ContactForm />} />
+        <Route path='/About-Us' element={<About />} />
+        <Route path='/Career' element={<Career />} />
+        <Route path='/Blogs' element={<Blogs />} />
         <Route path='/blogs/:id' element={<BlogPost />} />
         <Route path='/support' element={<Support />} />
       </Routes>
